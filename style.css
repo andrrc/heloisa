@@ -1,0 +1,139 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(234, 149, 163);
+    color: #fff;
+}
+.playerMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.164);
+    box-shadow: 0 8px 32px 0 rgba(6, 7, 24, 0.37);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    width: 100vw;
+    height: 40vh;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    transition: 300ms all ease;
+}
+.expand{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.divExpand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.albumMusica {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.descricao {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.duracao {
+    width: 200px;
+    margin-top: 10px;
+    
+}
+
+.barra {
+    width: 200px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress {
+    width: 0;
+    height: 6px;
+    background-color: orange;
+}
+
+.ponto {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-left: -10px;
+}
+
+.tempo {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.player {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -20px;
+    align-items: center;
+}
+
+.botao-play,
+.botao-pause {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.setas {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.botao-pause {
+    display: none;
+}
+.expandir{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.164);
+    box-shadow: 0 8px 32px 0 rgba(6, 7, 24, 0.37);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    position: absolute;
+    transition: all ease 300ms;
+    top: -50px;
+}
