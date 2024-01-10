@@ -2,13 +2,47 @@ body,
 html {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     background: rgb(234, 149, 163);
     color: #fff;
+    
+}
+body{
+    overflow-x: hidden;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    color: white;
+}
+header{
+    width: 100%;
+    height: 20vh;
+    background: rgba(255, 255, 255, 0.164);
+    box-shadow: 0 8px 32px 0 rgba(6, 7, 24, 0.37);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listaHeader{
+    display: flex;
+    gap: 30px;
+    
+}
+li{
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.logoWe{
+    width: 60px;
+    height: 60px;
 }
 .playerMain{
     display: flex;
@@ -21,7 +55,7 @@ html {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.03);
     width: 100vw;
-    height: 40vh;
+    height: 25vh;
     flex-direction: column;
     position: fixed;
     bottom: 0;
@@ -36,6 +70,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 350px;
+    text-align: center;
 }
 .controll{
     display: flex;
@@ -59,6 +95,8 @@ h2 {
     width: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .duracao {
@@ -136,4 +174,53 @@ progress {
     position: absolute;
     transition: all ease 300ms;
     top: -50px;
+    right: 50%;
+    margin-right: -25px;
+}
+.anuncioPai{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.164);
+    box-shadow: 0 8px 32px 0 rgba(6, 7, 24, 0.37);
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    z-index: 999999;
+    top: 0;
+}
+.popUp{
+    width: 25%;
+    height: 50%;
+    background-color: #eee;
+    color: black;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.coracao{
+    height: 50px;
+    font-size: 40px;
+    color: red;
+    animation: hearth infinite ease 800ms;
+    transition: all ease-in;
+
+}
+@keyframes hearth {
+    0%{
+        font-size: 40px;
+    }
+    50%{
+        font-size: 50px;
+    }
+    100%{
+        font-size: 40px;
+    }
 }

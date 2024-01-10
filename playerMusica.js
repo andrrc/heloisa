@@ -1,15 +1,15 @@
 //Arrays com musicas "Lista"
 let musicas = [
     {
-        titulo: 'musicas que me lembra você',
+        titulo: 'musicas que me lembram você',
         src:'musicas/macmiller congratulations.mp3'
     },
     {
-        titulo: 'musicas que me lembra você',
+        titulo: 'musicas que me lembram você',
         src:'musicas/rufus innerbloom.mp3'
     },
     {
-        titulo: 'musicas que me lembra você',
+        titulo: 'musicas que me lembram você',
         src:'musicas/yunkvino favorita.mp3'
     }
 
