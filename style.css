@@ -53,7 +53,7 @@ nav{
 }
 li{
     letter-spacing: 2px;
-    font-size: 10px;
+    font-size: 1rem;
 }
 .logoWe{
     width: 60px;
@@ -103,7 +103,7 @@ li{
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 1.5rem;
     text-wrap: wrap;
     padding: 0;
     margin-bottom: 0;
